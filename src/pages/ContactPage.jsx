@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Mail } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 
 import FloatingNavbar from '../components/shared/FloatingNavbar';
@@ -264,6 +264,22 @@ function SideCards() {
               </li>
             ))}
           </ul>
+        </div>
+      </RevealWrapper>
+
+      <RevealWrapper delay={0.15}>
+        <div className="bg-white border border-[#0B1220]/10 rounded-card p-8 shadow-soft">
+          <h3 className="font-sans font-semibold text-base text-[#0B1220] mb-3">Email Directly</h3>
+          <p className="font-sans text-sm text-[#5A6478] leading-relaxed mb-4">
+            Prefer to reach out directly? Send me an email and I'll respond within 1–2 business days.
+          </p>
+          <a href="mailto:info@kaabok.com"
+            className="flex items-center gap-3 bg-[#F6F3EE] rounded-lg px-4 py-3 group hover:bg-[#B69B74]/10 transition-colors duration-200">
+            <Mail size={18} className="text-[#B69B74] shrink-0" />
+            <span className="font-sans text-sm font-semibold text-[#0B1220] group-hover:text-[#B69B74] transition-colors duration-200">
+              info@kaabok.com
+            </span>
+          </a>
         </div>
       </RevealWrapper>
 
