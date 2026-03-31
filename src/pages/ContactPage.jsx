@@ -144,7 +144,7 @@ function ContactForm() {
     try {
       await emailjs.send(
         'service_u5y4k1m',
-        'template_0v3xqtf',
+        'template_ji2getm',
         {
           fullName: form.fullName,
           email: form.email,

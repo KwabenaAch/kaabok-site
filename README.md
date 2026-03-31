@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kaabok — AI Consulting & Executive Advisory
 
 Website for **Kaabok**, an AI consulting and executive advisory platform focused on helping companies and SMEs in Ghana and beyond adopt AI in a practical, responsible, and scalable way.
@@ -116,3 +117,6 @@ Vercel is configured with:
 **Kaabok**
 Accra, Ghana
 boakye@kaabok.com
+=======
+# kaabok-site
+>>>>>>> 028f72a394783c5a401e49bc78d57c55f2c587c4
