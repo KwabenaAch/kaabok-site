@@ -290,7 +290,7 @@ function SideCards() {
             Prefer to talk first? Book a complimentary 30-minute discovery call to explore
             how I can support your organisation's AI journey.
           </p>
-          <MagneticButton variant="gold" href="/contact" className="w-full justify-center">
+          <MagneticButton variant="gold" onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })} className="w-full justify-center">
             Book Discovery Call
           </MagneticButton>
         </div>
@@ -339,7 +339,7 @@ export default function ContactPage() {
           <div className="mx-auto w-full max-w-container px-8 max-sm:px-5">
             <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 items-start">
               <RevealWrapper>
-                <div className="bg-white border border-[#0B1220]/10 rounded-card p-8 md:p-10 shadow-soft">
+                <div id="contact-form" className="bg-white border border-[#0B1220]/10 rounded-card p-8 md:p-10 shadow-soft">
                   <h2 className="font-sans font-semibold text-xl text-[#0B1220] mb-8">Send an Inquiry</h2>
                   <ContactForm />
                 </div>
