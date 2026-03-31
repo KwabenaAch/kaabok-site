@@ -313,7 +313,7 @@ function DiscoveryCTASection() {
           Whether you're ready to engage or still exploring, I'm happy to help you think through the options.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <MagneticButton variant="gold" href="/contact">Book Discovery Call</MagneticButton>
+          <MagneticButton variant="gold" onClick={() => document.getElementById('contact-form').scrollIntoView({ behavior: 'smooth' })}>Book Discovery Call</MagneticButton>
           <MagneticButton variant="primary" href="/services"
             className="!bg-transparent !text-[#0F1524] border !border-[#0F1524]/25 hover:!bg-[#0F1524]/8">
             View Services
