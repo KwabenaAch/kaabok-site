@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-deep:         #0B1220;
+  --bg-surface:      #F6F3EE;
+  --bg-surface-soft: #EEE9E1;
+  --bg-paper:        #FFFFFF;
+  --ink-light:       #F5F2EC;
+  --ink-dark:        #0B1220;
+  --ink-muted:       #5A6478;
+  --line-light:      rgba(255,255,255,0.09);
+  --line-dark:       rgba(11,18,32,0.10);
+  --accent-blue:     #183A6B;
+  --accent-blue-h:   #1E4A87;
+  --accent-gold:     #B69B74;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--bg-surface); color: var(--ink-dark); overflow-x: hidden; font-size: 1.05rem; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-surface); }
+::-webkit-scrollbar-thumb { background: var(--accent-gold); border-radius: 2px; }
+
+/* Mobile section rhythm */
+@media (max-width: 639px) {
+  .section-py { padding-top: 56px; padding-bottom: 56px; }
+}
+
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");
+  opacity: 0.022; pointer-events: none; z-index: 9999;
+}
